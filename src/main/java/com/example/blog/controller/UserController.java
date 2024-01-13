@@ -15,6 +15,7 @@ public class UserController {
 
     @RequestMapping("/findById")
     public User findById(Integer id){
+        System.out.println("sss");
         System.out.println(userService.findById(id));
         return userService.findById(id);
     }
